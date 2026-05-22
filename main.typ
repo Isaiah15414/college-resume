@@ -11,25 +11,19 @@
     // Aspiring software developer with 4 years of experience in robotics engineering, autonomous programming, and writing engineering design journals. Passionate about teaching younger students and peers about computer science and math topics through student club leadership and virtual or in-person tutoring.
 
     = Education
-    #grid(
-      columns: (3.5cm, auto),
-      row-gutter: 10pt,
+    #list-grid(
       [=== School], [Eleanor Roosevelt High School • Class of 2026],
       [=== GPA], [4.0],
       [=== Relevant Courses], [AP Calculus BC, AP Computer Science Principles, AP Computer Science A],
       [=== Awards],
       [ASL Seal of Biliteracy, Excellence in ASL: Passion and Peer Leadership Award, Excellence in Computer Science, Certificate of Congressional Recognition: VEX Robotics],
-
       [=== Clubs], [VEX Robotics, Programming Club, National English Honor Society, Mu Alpha Theta Math Honor Society],
       [=== College of Choice], [University of Maryland: College Park • Class of 2030],
       [=== Major], [Computer Science],
     )
 
     = Experience
-    #grid(
-      inset: (left: 0mm, rest: 1mm),
-      columns: (1.25em, 1.25em, 1fr),
-      column-gutter: (0pt, 0.3em),
+    #timeline-grid(
       ..timeline(
         job(
           title: [Coding Tutor],
@@ -85,12 +79,10 @@
 
 
     = Skills
-    #grid(
-      columns: (3.5cm, auto),
-      row-gutter: 10pt,
+    #list-grid(
       [=== Coding Languages], [Python, C++, Java, HTML, CSS, Typst, Arduino],
       [=== Software], [Git, Github, VSCode, Onshape, Godot, Capcut, Google Workspace],
-      [=== Extracurriculars], [Kuk Sool Won Korean Martial Arts, Piano],
+      [=== Extracurriculars], [Kuk Sool Won Martial Arts, Piano, Chess],
     )
   ],
 )
