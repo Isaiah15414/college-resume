@@ -1,4 +1,4 @@
-#let dark-blue = rgb("1f1862")
+#import "colors.typ": *
 
 #let resume(
   name: "",
@@ -26,7 +26,7 @@
     if (it.level == 1) {
       set text(fill: dark-blue)
       grid(
-        row-gutter: 10pt,
+        row-gutter: 0.5em,
         it,
         line(length: 100%),
       )
