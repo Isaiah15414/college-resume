@@ -38,20 +38,20 @@
       ..timeline(
         job(
           title: [Freelance Web Designer],
-          subtitle: [Self-Employed],
+          subtitle: [Pro Spex • Crowned with Comfort LLC • Laurel, MD],
           start-time: [2025],
-          description: [Part-Time],
+          description: [Freelance],
           [
-            - Designed a home inspection services and training academy website for Pro Spex in Wix Studio
+            - Designed a home inspection services and training academy website in Wix Studio
               - Recorded and edited videos for YouTube, Instagram, and Facebook using Capcut
-            - Designed a e-commerce website for Crowned With Comfort LLC in Wix Studio
+            - Designed an e-commerce website in Wix Studio
           ],
         ),
       ),
       ..timeline(
         job(
           title: [Student Mentor],
-          subtitle: [Howard County Library System],
+          subtitle: [Howard County Library System • Columbia, MD],
           start-time: [June 2024],
           end-time: [July 2024],
           description: [Part-Time],
@@ -65,9 +65,10 @@
       ..timeline(
         job(
           title: [Camera Operator],
-          subtitle: [Metropolitan Baptist Church],
+          subtitle: [Metropolitan Baptist Church • Largo, MD],
           start-time: [2024],
           end-time: [2026],
+          description: [Volunteer],
           [
             - Recorded and broadcasted church services by operating cameras and managing Resi live streaming
             - Directed multimedia team and assisted in teaching younger members how to control camera and ProPresenter software
@@ -76,9 +77,10 @@
       ),
       ..timeline(last: true, job(
         title: [Coding Tutor],
-        subtitle: [Eleanor Roosevelt High School],
+        subtitle: [Eleanor Roosevelt High School • Greenbelt, MD],
         start-time: [2023],
         end-time: [2026],
+        description: [Volunteer],
         [
           - Taught Python, C++, and Java through online compilers, Arduino, Raspberry PIs, and VEX Robotics
           - Hosted first ERHS hackathon to help students develop teamwork and time management skills
