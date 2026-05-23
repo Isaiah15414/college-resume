@@ -1,5 +1,5 @@
-#import "format.typ": *
-#import "components.typ": *
+#import "style/format.typ": *
+#import "style/components.typ": *
 
 #let summary = [
   Aspiring software developer with 4 years of experience in robotics engineering, autonomous programming, and writing engineering design journals and a passion for teaching.
@@ -13,6 +13,7 @@
     "linkedin.com/in/isaiah-blanc",
     "github.com/Isaiah15414",
   ),
+  color: dark-blue,
   [
     = Education
     #list-grid(
@@ -90,7 +91,7 @@
       [=== Coding Languages],
       [Python, C++, Java, HTML, CSS, Typst, Arduino],
       [=== Software],
-      [Git, Github, VSCode, Onshape, Godot, Capcut, Google Workspace],
+      [Git, Github, VSCode, Onshape, Godot, Capcut, Google Workspace, Microsoft 365, Canva, Wix, Squarespace],
       [=== Extracurriculars],
       [Kuk Sool Won Martial Arts, Piano, Chess],
     )
