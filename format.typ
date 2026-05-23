@@ -2,7 +2,8 @@
 
 #let resume(
   name: "FirstName LastName",
-  contact: none,
+  color: dark-blue,
+  contact: ("",),
   description: none,
   body,
 ) = {
@@ -28,7 +29,7 @@
   show heading: it => {
     set text(weight: "semibold")
     if (it.level == 1) {
-      set text(fill: dark-blue)
+      set text(fill: color)
       grid(
         row-gutter: 0.5em,
         it,
@@ -44,7 +45,7 @@
     #box(
       radius: 100%,
       width: 100%,
-      fill: dark-blue,
+      fill: color,
       inset: 10pt,
       align(
         center,

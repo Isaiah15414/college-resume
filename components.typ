@@ -8,7 +8,7 @@
 
 #let timeline(body, last: false) = {
   let stroke = if not last { (right: 1pt + black) }
-  let circle = box(circle(radius: 3pt, fill: dark-blue))
+  let circle = box(circle(radius: 3pt, stroke: 1.5pt))
   (
     grid.cell(
       colspan: 2,
