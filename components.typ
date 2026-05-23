@@ -44,7 +44,7 @@
     ],
     [
       #set align(right)
-      === #start-time — #end-time
+      === #start-time -- #end-time
       #description
     ],
     grid.cell(colspan: 2, body),

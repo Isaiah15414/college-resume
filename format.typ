@@ -1,16 +1,18 @@
 #import "colors.typ": *
 
 #let resume(
-  name: "",
-  phone: "",
-  email: "",
-  linkedin: "",
-  description: "",
+  name: "FirstName LastName",
+  contact: none,
+  description: none,
   body,
 ) = {
   set page(
     paper: "us-letter",
     margin: 1cm,
+    // footer: {
+    //   set text(size: 9pt)
+    //   grid(columns: (1fr, 1fr), [This resume was developed indepedently in Typst.], align(right, [https://github.com/Isaiah15414/college-resume]))
+    // }
   )
 
   set text(
@@ -20,6 +22,8 @@
   )
 
   set par(justify: true)
+
+  set list(marker: ([•]))
 
   show heading: it => {
     set text(weight: "semibold")
@@ -47,7 +51,12 @@
         [
           #set text(fill: white)
           #text(size: 20pt, weight: "semibold", name) \
-          #phone • #email • #linkedin
+          #grid(
+            columns: contact.len(),
+            stroke: (x, y) => if x != 0 and x != contact.len() { (left: white) }, 
+            inset: (x: 1em),
+            ..contact,
+          )
         ],
       ),
     )
