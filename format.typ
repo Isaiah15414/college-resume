@@ -26,9 +26,10 @@
 
   set list(marker: ([•]))
 
-  show heading: it => {
+  show heading: it => { 
     set text(weight: "semibold")
     if (it.level == 1) {
+      v(10pt) // Added for fluff
       set text(fill: color)
       grid(
         row-gutter: 0.5em,
@@ -46,7 +47,7 @@
       radius: 100%,
       width: 100%,
       fill: color,
-      inset: 10pt,
+      inset: 1em,
       align(
         center,
         [

@@ -2,7 +2,7 @@
 #import "components.typ": *
 
 #let summary = [
-  Aspiring software developer with 4 years of experience in robotics engineering, autonomous programming, and writing engineering design journals. Passionate about teaching younger students and peers about computer science and math topics through student club leadership and virtual or in-person tutoring.
+  Aspiring software developer with 4 years of experience in robotics engineering, autonomous programming, and writing engineering design journals and a passion for teaching.
 ]
 
 #resume(
