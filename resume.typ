@@ -43,7 +43,7 @@
           description: [Freelance],
           [
             - Designed a home inspection services and training academy website in Wix Studio
-              - Recorded and edited videos for YouTube, Instagram, and Facebook using Capcut
+            - Recorded and edited videos for YouTube, Instagram, and Facebook using Capcut
             - Designed an e-commerce website in Wix Studio
           ],
         ),
@@ -57,8 +57,8 @@
           description: [Part-Time],
           [
             - Taught engineering and computer science topics to middle school students
-              - Developed expertise in soldering, construction, and electrical engineering during SeaPerch courses
-              - Built, programmed, and showcased a FIRST robot to develop interest in younger audiences
+            - Developed expertise in soldering, construction, and electrical engineering during SeaPerch courses
+            - Built, programmed, and showcased a FIRST robot to develop interest in younger audiences
           ],
         ),
       ),
@@ -76,13 +76,13 @@
         ),
       ),
       ..timeline(last: true, job(
-        title: [Coding Tutor],
+        title: [Computer Science Tutor],
         subtitle: [Eleanor Roosevelt High School • Greenbelt, MD],
         start-time: [2023],
         end-time: [2026],
         description: [Volunteer],
         [
-          - Taught Python, C++, and Java through online compilers, Arduino, Raspberry PIs, and VEX Robotics
+          - Taught Python, C++, and Java through online compilers, Arduino, and Raspberry PIs as coding club president
           - Hosted first ERHS hackathon to help students develop teamwork and time management skills
         ],
       )),
@@ -91,7 +91,7 @@
     = Skills
     #list-grid(
       [=== Coding Languages],
-      [Python, C++, Java, HTML, CSS, Typst, Arduino],
+      [Python, C++, Java, HTML, CSS, GDScript, Typst, Arduino],
       [=== Software],
       [Git, Github, VSCode, Onshape, Godot, Capcut, Google Workspace, Microsoft 365, Canva, Wix, Squarespace],
       [=== Extracurriculars],
