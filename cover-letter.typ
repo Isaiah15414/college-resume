@@ -2,9 +2,14 @@
 #import "style/components.typ": *
 
 #cover-letter(
+  color: dark-blue,
   [
-    Dear Hiring Manager,
+    #lorem(25)
 
-		Hello world.
+    #lorem(75)
+
+    #lorem(100)
+
+    #lorem(50)
   ],
 )

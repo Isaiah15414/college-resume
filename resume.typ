@@ -38,9 +38,9 @@
       ..timeline(
         job(
           title: [Freelance Web Designer],
-          subtitle: [Pro Spex • Crowned with Comfort LLC • Laurel, MD],
+          subtitle: [Pro Spex • Crowned with Comfort LLC],
           start-time: [2025],
-          description: [Freelance],
+          location: [Laurel, MD],
           [
             - Designed a home inspection services and training academy website in Wix Studio
             - Recorded and edited videos for YouTube, Instagram, and Facebook using Capcut
@@ -51,10 +51,10 @@
       ..timeline(
         job(
           title: [Student Mentor],
-          subtitle: [Howard County Library System • Columbia, MD],
+          subtitle: [Howard County Library System],
           start-time: [June 2024],
           end-time: [July 2024],
-          description: [Part-Time],
+          location: [Columbia, MD],
           [
             - Taught engineering and computer science topics to middle school students
             - Developed expertise in soldering, construction, and electrical engineering during SeaPerch courses
@@ -65,10 +65,10 @@
       ..timeline(
         job(
           title: [Camera Operator],
-          subtitle: [Metropolitan Baptist Church • Largo, MD],
+          subtitle: [Metropolitan Baptist Church],
           start-time: [2024],
           end-time: [2026],
-          description: [Volunteer],
+          location: [Largo, MD],
           [
             - Recorded and broadcasted church services by operating cameras and managing Resi live streaming
             - Directed multimedia team and assisted in teaching younger members how to control camera and ProPresenter software
@@ -77,10 +77,10 @@
       ),
       ..timeline(last: true, job(
         title: [Computer Science Tutor],
-        subtitle: [Eleanor Roosevelt High School • Greenbelt, MD],
+        subtitle: [Eleanor Roosevelt High School],
         start-time: [2023],
         end-time: [2026],
-        description: [Volunteer],
+        location: [Greenbelt, MD],
         [
           - Taught Python, C++, and Java through online compilers, Arduino, and Raspberry PIs as coding club president
           - Hosted first ERHS hackathon to help students develop teamwork and time management skills

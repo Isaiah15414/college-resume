@@ -6,47 +6,43 @@
   column-gutter: (0pt, 0.3em),
 )
 
-#let timeline(body, last: false) = {
-  let stroke = if not last { (right: 1pt + black) }
-  let circle = box(circle(radius: 0.3em, stroke: 0.1em))
-  (
-    grid.cell(
-      colspan: 2,
-      align: center,
-      inset: (x: 0pt, y: 0.3em),
-      circle,
-    ),
-    grid.cell(
-      rowspan: 2,
-      inset: (bottom: if not last { 1em } else { 0em }),
-      body,
-    ),
-    grid.cell(
-      stroke: stroke,
-    )[],
+#let timeline(body, last: false) = (
+  grid.cell(
+    colspan: 2,
+    align: center,
+    inset: (x: 0pt, y: 0.3em),
+    box(circle(radius: 0.3em, stroke: 0.1em)),
+  ),
+  grid.cell(
+    rowspan: 2,
+    inset: (bottom: if not last { 1em } else { 0em }),
+    body,
+  ),
+  grid.cell(
+    stroke: if not last { (right: 1pt + black) },
     none,
-  )
-}
+  ),
+  none,
+)
 
-#let job(title: [], subtitle: [], start-time: [], end-time: [], description: [], body) = {
-  grid(
-    columns: (1fr, auto),
-    row-gutter: 1em,
-    rows: 3,
-    [== #title],
-    align(right, {
-      if start-time != [] {
-        if end-time == [] { end-time = [Present] }
-        [=== #start-time -- #end-time]
-      }
-    }),
-    subtitle,
-    align(right, description),
-    grid.cell(colspan: 2, body),
-  )
-}
+#let job(title: [], subtitle: [], start-time: [], end-time: [], location: [], body) = grid(
+  columns: (1fr, auto),
+  row-gutter: 1em,
+  rows: 3,
+  [== #title],
+  align(right, {
+    if start-time != [] {
+      if end-time == [] { end-time = [Present] }
+      [=== #start-time -- #end-time]
+    }
+  }),
+  subtitle,
+  align(right, location),
+  grid.cell(colspan: 2, body),
+)
 
 #let list-grid = grid.with(
+  align: horizon,
   columns: (3.5cm, auto),
   row-gutter: 1em,
 )
