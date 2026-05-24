@@ -6,19 +6,12 @@
   color: black,
   body,
 ) = {
-  set page(
-    paper: "us-letter",
-    margin: 1cm,
-  )
-
   set text(
     font: "Blinker",
     size: 11pt,
     hyphenate: false,
   )
-
   set par(justify: true)
-
   set list(marker: [•])
 
   show heading: it => {
@@ -36,30 +29,32 @@
     }
   }
 
-  show: page[
-    // Header
-    #box(
-      radius: 100%,
-      width: 100%,
-      fill: color,
-      inset: 1em,
-      align(
-        center,
-        [
-          #set text(fill: white)
-          #text(size: 20pt, weight: "semibold", name) \
-          #grid(
-            columns: contact.len(),
-            stroke: (x, y) => if x != 0 and x != contact.len() { (left: white) },
-            inset: (x: 1em),
-            ..contact,
-          )
-        ],
-      ),
-    )
-
-    #body
-  ]
+  show: page(
+    margin: 1cm,
+    [
+      // Header
+      #box(
+        radius: 100%,
+        width: 100%,
+        fill: color,
+        inset: 1em,
+        align(
+          center,
+          [
+            #set text(fill: white)
+            #text(size: 20pt, weight: "semibold", name) \
+            #grid(
+              columns: contact.len(),
+              stroke: (x, y) => if x != 0 and x != contact.len() { (left: white) },
+              inset: (x: 1em),
+              ..contact,
+            )
+          ],
+        ),
+      )
+      #body
+    ],
+  )
 }
 
 #let cover-letter(
@@ -68,6 +63,8 @@
     job: "Job Title",
     street: "Main Street",
     location: "City, State, 12345",
+    phone: "123-456-7890",
+    email: "yourname@email.com",
   ),
   recipient: (
     name: "Recipient Name",
@@ -80,10 +77,6 @@
   date: "March 13, 20XX",
   body,
 ) = {
-  set page(
-    paper: "us-letter",
-  )
-
   set text(
     font: "Blinker",
     size: 11pt,
@@ -92,18 +85,34 @@
 
   set par(justify: true)
 
-  show: page([
+  show: page[
     #grid(
-      stroke: black,
-      columns: (1fr, auto),
-      grid.cell(colspan: 2, align(right, date)),
+      columns: 1fr,
+      inset: (y: 1em),
+      row-gutter: 1em,
+      grid.cell(stroke: (y: color), align(center, [
+        #text(size: 20pt, text(weight: "semibold", fill: color, author.at("name", default: "Your Name")))
+
+        #author.at("street", default: "Main Street"), #author.at("location", default: "City, State, 12345") • #author.at("phone", default: "123-456-7890") • #author.at("email", default: "yourname@email.com")
+      ])),
+      align(right, date),
       [
-        #recipient.name
-        \ #recipient.job
-        \ #recipient.company
-        \ #recipient.street
-        \ #recipient.location
+        #recipient.at("name", default: "Recipient Name")
+
+        #recipient.at("job", default: "Hiring Manager")
+
+        #recipient.at("company", default: "Company Name")
+
+        #recipient.at("street", default: "Main Street")
+
+        #recipient.at("location", default: "City, State, 12345")
+      ],
+      body,
+      [
+        Sincerely,
+
+        #author.at("name", default: "Your Name")
       ],
     )
-  ])
+  ]
 }
