@@ -17,7 +17,6 @@
   show heading: it => {
     set text(weight: "semibold")
     if (it.level == 1) {
-      v(10pt) // Added for fluff
       set text(fill: color)
       grid(
         row-gutter: 0.5em,
@@ -34,7 +33,7 @@
     [
       // Header
       #box(
-        radius: 100%,
+        radius: 25%,
         width: 100%,
         fill: color,
         inset: 1em,
@@ -42,11 +41,13 @@
           center,
           [
             #set text(fill: white)
-            #text(size: 20pt, weight: "semibold", name) \
             #grid(
               columns: contact.len(),
+              rows: 2,
+              row-gutter: 1em,
               stroke: (x, y) => if x != 0 and x != contact.len() { (left: white) },
               inset: (x: 1em),
+              grid.cell(colspan: contact.len(), text(size: 2em, weight: "semibold", name)),
               ..contact,
             )
           ],
