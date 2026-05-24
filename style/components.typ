@@ -8,12 +8,12 @@
 
 #let timeline(body, last: false) = {
   let stroke = if not last { (right: 1pt + black) }
-  let circle = box(circle(radius: 3pt, stroke: 1.5pt))
+  let circle = box(circle(radius: 0.3em, stroke: 0.1em))
   (
     grid.cell(
       colspan: 2,
       align: center,
-      inset: (x: 0pt, y: 0.4em),
+      inset: (x: 0pt, y: 0.3em),
       circle,
     ),
     grid.cell(
@@ -48,5 +48,5 @@
 
 #let list-grid = grid.with(
   columns: (3.5cm, auto),
-  row-gutter: 10pt,
+  row-gutter: 1em,
 )
