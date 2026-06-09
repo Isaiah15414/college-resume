@@ -87,7 +87,6 @@
     size: 11pt,
     hyphenate: false,
   )
-  set par(justify: true)
 
   show: page[
     #grid(
@@ -96,7 +95,7 @@
       grid.cell(stroke: (y: black), grid(
         align: horizon + right,
         columns: (auto, 1fr),
-        column-gutter: 2em,
+        column-gutter: 1em,
         text(size: 20pt, text(weight: "semibold", fill: color, author.at("name", default: name))),
         [
           #author.at("street", default: street),
@@ -118,9 +117,10 @@
         #recipient.at("location", default: location)
       ],
       [
-        Dear #recipient.job,
+        Dear #recipient.at("job", default: "Hiring Manager"),
       ],
       [
+        #set par(justify: true)
         #body
       ],
       [
