@@ -2,7 +2,7 @@
 #import "style/components.typ": *
 
 #let summary = [
-  Aspiring software developer with 4 years of experience in robotics engineering, autonomous programming, and writing engineering design journals and a passion for teaching.
+  Aspiring software developer with hands-on experience in web design, tutoring, and robotics. Proficient in Python, C++, Java, and multiple web platforms. Demonstrated strong ability to teach technical concepts, build projects, and lead teams.
 ]
 
 #resume(
@@ -15,55 +15,65 @@
   ),
   color: dark-blue,
   [
+    = Summary
+    #summary
+
     = Education
-    #list-grid(
-      [=== School],
-      [Eleanor Roosevelt High School • Class of 2026],
-      [=== GPA],
-      [4.0],
-      [=== Relevant Courses],
-      [AP Calculus BC, AP Computer Science Principles, AP Computer Science A],
-      [=== Awards],
-      [ASL Seal of Biliteracy, Excellence in ASL Award, Excellence in Computer Science Award, Certificate of Congressional Recognition: VEX Robotics],
-      [=== Clubs],
-      [VEX Robotics, National English Honor Society, Mu Alpha Theta Math Honor Society, Programming Club, Chess Club, Environmental Defense Club],
-      [=== College of Choice],
-      [University of Maryland: College Park • Class of 2030],
-      [=== Major],
-      [Computer Science],
+    #section(
+      title: [University of Maryland: College Park],
+      subtitle: [Bachelor of Science in Computer Science],
+      start-time: [August 2026],
+      end-time: [May 2030],
+      location: [College Park, MD],
+      [
+        
+      ]
+    )
+    #section(
+      title: [Eleanor Roosevelt High School],
+      subtitle: [High School Diploma],
+      start-time: [August 2022],
+      end-time: [May 2026],
+      location: [Greenbelt, MD],
+      [
+        - *GPA:* 4.0
+        - *Relevant Coursework:* AP Calculus BC, AP Computer Science Principles, AP Computer Science A
+        - *Awards:* ASL Seal of Biliteracy, Excellence in ASL Award, Excellence in Computer Science Award, Certificate of Congressional Recognition: VEX Robotics
+        - *Leadership:* VEX Robotics, National English Honor Society, Mu Alpha Theta Math Honor Society, Coding Club
+        
+      ]
     )
 
     = Work Experience
     #timeline-grid(
       ..timeline(
-        job(
+        section(
           title: [Freelance Web Designer],
-          subtitle: [Pro Spex • Crowned with Comfort LLC],
+          subtitle: [Pro Spex | Crowned with Comfort LLC],
           start-time: [2025],
           location: [Laurel, MD],
           [
-            - Designed a home inspection services and training academy website in Wix Studio
+            - Designed an e-commerce website, home inspection services website, and training academy website using Wix
             - Recorded and edited videos for YouTube, Instagram, and Facebook using Capcut
-            - Designed an e-commerce website in Wix Studio
           ],
         ),
       ),
       ..timeline(
-        job(
+        section(
           title: [Student Mentor],
-          subtitle: [Howard County Library System],
+          subtitle: [Howard County Library System -- HiTech],
           start-time: [June 2024],
           end-time: [July 2024],
           location: [Columbia, MD],
           [
             - Taught engineering and computer science topics to middle school students
             - Developed expertise in soldering, construction, and electrical engineering during SeaPerch courses
-            - Built, programmed, and showcased a FIRST robot to develop interest in younger audiences
+            - Built, programmed, and showcased a FIRST robot to spark interest in STEM among younger audiences
           ],
         ),
       ),
       ..timeline(
-        job(
+        section(
           title: [Camera Operator],
           subtitle: [Metropolitan Baptist Church],
           start-time: [2024],
@@ -75,7 +85,7 @@
           ],
         ),
       ),
-      ..timeline(last: true, job(
+      ..timeline(last: true, section(
         title: [Computer Science Tutor],
         subtitle: [Eleanor Roosevelt High School],
         start-time: [2023],
@@ -93,7 +103,7 @@
       [=== Coding Languages],
       [Python, C++, Java, HTML, CSS, GDScript, Typst, Arduino],
       [=== Software],
-      [Git, Github, VSCode, Onshape, Godot, Capcut, Google Workspace, Microsoft 365, Canva, Wix, Squarespace],
+      [Git, Github, VSCode, Onshape, Godot, Capcut, Google Workspace, Microsoft 365, Canva, Wix],
       [=== Extracurriculars],
       [Kuk Sool Won Martial Arts, Piano, Chess],
     )

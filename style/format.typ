@@ -7,6 +7,9 @@
 #let location = "City, State, Zipcode"
 #let date = "Month Day, Year"
 
+#let font = "Blinker"
+#let text-size = 11pt
+
 #let resume(
   name: name,
   contact: (phone,),
@@ -14,8 +17,8 @@
   body,
 ) = {
   set text(
-    font: "Blinker",
-    size: 11pt,
+    font: "Times New Roman",
+    size: text-size,
     hyphenate: false,
   )
   set par(justify: true)
@@ -24,26 +27,28 @@
   show heading: it => {
     set text(weight: "semibold")
     if (it.level == 1) {
-      set text(fill: color)
+      set text(fill: color, size: text-size + 4pt)
       grid(
         row-gutter: 0.5em,
         it,
         line(length: 100%),
       )
+    } else if (it.level == 2) {
+        text(size: text-size + 2pt, it)
     } else {
       it
     }
   }
 
   show: page(
-    margin: 1cm,
+    margin: 0.5in,
     [
       // Header
       #box(
         radius: 25%,
         width: 100%,
         fill: color,
-        inset: 1em,
+        inset: (x: 0.5em, y: 1em),
         align(center, [
           #set text(fill: white)
           #grid(
@@ -52,7 +57,7 @@
             row-gutter: 1em,
             stroke: (x, y) => if x != 0 and x != contact.len() { (left: white) },
             inset: (x: 1em),
-            grid.cell(colspan: contact.len(), text(size: 2em, weight: "semibold", name)),
+            grid.cell(colspan: contact.len(), text(size: 1.5em, weight: "semibold", name)),
             ..contact,
           )
         ]),
@@ -83,8 +88,8 @@
   body,
 ) = {
   set text(
-    font: "Blinker",
-    size: 11pt,
+    font: font,
+    size: text-size,
     hyphenate: false,
   )
 

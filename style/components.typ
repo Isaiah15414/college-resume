@@ -25,9 +25,9 @@
   none,
 )
 
-#let job(title: [], subtitle: [], start-time: [], end-time: [], location: [], body) = grid(
+#let section(title: [], subtitle: [], start-time: [], end-time: [], location: [], body) = grid(
   columns: (1fr, auto),
-  row-gutter: 1em,
+  row-gutter: 0.8em,
   rows: 3,
   [== #title],
   align(right, {
@@ -36,13 +36,14 @@
       [=== #start-time -- #end-time]
     }
   }),
-  subtitle,
-  align(right, location),
+  text(style: "italic", subtitle),
+  align(right, text(style: "italic", location)),
   grid.cell(colspan: 2, body),
 )
 
 #let list-grid = grid.with(
   align: horizon,
   columns: (3.5cm, auto),
-  row-gutter: 1em,
+  column-gutter: 1em,
+  row-gutter: 0.65em,
 )
