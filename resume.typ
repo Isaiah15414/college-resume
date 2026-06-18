@@ -26,8 +26,8 @@
       end-time: [May 2030],
       location: [College Park, MD],
       [
-        
-      ]
+
+      ],
     )
     #section(
       title: [Eleanor Roosevelt High School],
@@ -40,8 +40,8 @@
         - *Relevant Coursework:* AP Calculus BC, AP Computer Science Principles, AP Computer Science A
         - *Awards:* ASL Seal of Biliteracy, Excellence in ASL Award, Excellence in Computer Science Award, Certificate of Congressional Recognition: VEX Robotics
         - *Leadership:* VEX Robotics, National English Honor Society, Mu Alpha Theta Math Honor Society, Coding Club
-        
-      ]
+
+      ],
     )
 
     = Work Experience
@@ -49,7 +49,7 @@
       ..timeline(
         section(
           title: [Freelance Web Designer],
-          subtitle: [Pro Spex | Crowned with Comfort LLC],
+          subtitle: [Pro Spex Inc. | Crowned with Comfort LLC],
           start-time: [2025],
           location: [Laurel, MD],
           [
@@ -62,8 +62,8 @@
         section(
           title: [Student Mentor],
           subtitle: [Howard County Library System -- HiTech],
-          start-time: [June 2024],
-          end-time: [July 2024],
+          start-time: [July 2024],
+          end-time: [August 2024],
           location: [Columbia, MD],
           [
             - Taught engineering and computer science topics to middle school students
