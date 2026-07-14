@@ -38,14 +38,24 @@
       [
         - *GPA:* 4.0
         - *Relevant Coursework:* AP Calculus BC, AP Computer Science Principles, AP Computer Science A
-        - *Awards:* ASL Seal of Biliteracy, Excellence in ASL Award, Excellence in Computer Science Award, Certificate of Congressional Recognition: VEX Robotics
+        - *Awards:* AP Scholar Award, ASL Seal of Biliteracy, Excellence in ASL Award, Excellence in Computer Science Award, Certificate of Congressional Recognition: VEX Robotics
         - *Leadership:* VEX Robotics, National English Honor Society, Mu Alpha Theta Math Honor Society, Coding Club
-
       ],
     )
 
     = Work Experience
     #timeline-grid(
+      ..timeline(
+        section(
+          title: [Chess Instructor],
+          subtitle: [Silver Knights Chess Academy],
+          start-time: [September 2026],
+          location: [College Park, MD],
+          [
+            - Helped teach elementary school students how to play chess through engaging and interactive lessons
+          ],
+        ),
+      ),
       ..timeline(
         section(
           title: [Freelance Web Designer],
@@ -62,8 +72,8 @@
         section(
           title: [Student Mentor],
           subtitle: [Howard County Library System -- HiTech],
-          start-time: [July 2024],
-          end-time: [August 2024],
+          start-time: [July 2024], // 07/22/24
+          end-time: [August 2024], // 08/03/24
           location: [Columbia, MD],
           [
             - Taught engineering and computer science topics to middle school students
@@ -77,7 +87,7 @@
           title: [Camera Operator],
           subtitle: [Metropolitan Baptist Church],
           start-time: [2024],
-          end-time: [2026],
+          end-time: [August 2026],
           location: [Largo, MD],
           [
             - Recorded and broadcasted church services by operating cameras and managing Resi live streaming
@@ -88,8 +98,8 @@
       ..timeline(last: true, section(
         title: [Computer Science Tutor],
         subtitle: [Eleanor Roosevelt High School],
-        start-time: [2023],
-        end-time: [2026],
+        start-time: [August 2023],
+        end-time: [May 2026],
         location: [Greenbelt, MD],
         [
           - Taught Python, C++, and Java through online compilers, Arduino, and Raspberry PIs as coding club president

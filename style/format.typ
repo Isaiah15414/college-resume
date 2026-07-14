@@ -41,7 +41,7 @@
   }
 
   show: page(
-    margin: 0.5in,
+    margin: 0.4in,
     [
       // Header
       #box(
