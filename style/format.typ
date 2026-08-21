@@ -4,10 +4,10 @@
 #let phone = "000-000-0000"
 #let email = "yourname@email.com"
 #let street = "Street"
-#let location = "City, State, Zipcode"
+#let location = "City, State"
 #let date = "Month Day, Year"
 
-#let font = "Blinker"
+#let font = "Cambria"
 #let text-size = 11pt
 
 #let resume(
@@ -17,7 +17,7 @@
   body,
 ) = {
   set text(
-    font: "Times New Roman",
+    font: font,
     size: text-size,
     hyphenate: false,
   )
@@ -34,7 +34,7 @@
         line(length: 100%),
       )
     } else if (it.level == 2) {
-        text(size: text-size + 2pt, it)
+      text(size: text-size + 2pt, it)
     } else {
       it
     }
@@ -56,7 +56,7 @@
             rows: 2,
             row-gutter: 1em,
             stroke: (x, y) => if x != 0 and x != contact.len() { (left: white) },
-            inset: (x: 1em),
+            inset: (x: 0.75em),
             grid.cell(colspan: contact.len(), text(size: 1.5em, weight: "semibold", name)),
             ..contact,
           )

@@ -63,7 +63,7 @@
           start-time: [2025],
           location: [Laurel, MD],
           [
-            - Designed an e-commerce website, home inspection services website, and training academy website using Wix
+            - Designed  e-commerce website, home inspection services website, and training academy website using Wix
             - Recorded and edited videos for YouTube, Instagram, and Facebook using Capcut
           ],
         ),
@@ -91,7 +91,7 @@
           location: [Largo, MD],
           [
             - Recorded and broadcasted church services by operating cameras and managing Resi live streaming
-            - Directed multimedia team and assisted in teaching younger members how to control camera and ProPresenter software
+            - Directed multimedia team and assisted in teaching ProPresenter software to youth and senior members
           ],
         ),
       ),
@@ -102,7 +102,7 @@
         end-time: [May 2026],
         location: [Greenbelt, MD],
         [
-          - Taught Python, C++, and Java through online compilers, Arduino, and Raspberry PIs as coding club president
+          - Taught Python, C++, and Java through web compilers, Arduino, and Raspberry PIs as coding club president
           - Hosted first ERHS hackathon to help students develop teamwork and time management skills
         ],
       )),
