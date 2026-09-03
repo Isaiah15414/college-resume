@@ -2,14 +2,20 @@
 #import "style/components.typ": *
 
 #cover-letter(
-  color: dark-blue,
-  [
-    #lorem(25)
+    // recipient: (
+    //     name: [],
+    //     job: [],
+    //     company: [],
+    // ),
+    color: dark-blue,
+    date: date,
+    [
+        #lorem(25)
 
-    #lorem(75)
+        #lorem(75)
 
-    #lorem(100)
+        #lorem(100)
 
-    #lorem(50)
-  ],
+        #lorem(50)
+    ],
 )
